@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>UniTask</title>
+
+    <link rel="stylesheet" href="src/style.css">
+
+    <script src="src/mvc/controller.js"></script>
+    <script src="src/mvc/model.js"></script>
+    <script src="src/mvc/view.js"></script>
+</head>
+<body>
+    <header class="head">
+        <a href="">
+            <div class="box-head left"></div>
+        </a>
+    </header>
+    <ul id="content">
+        <li class="container">
+            <a href="" class="box edit"></a>
+            <a href="">
+            <div class="longbox">
+                <div class="box-halfline">
+                    <p class="box-halfline-text">Gazdinfó 2019-20/2</p>
+                </div>
+                <div class="box-quarterline">
+                    <p class="box-quarterline-text">PTE TTK</p>
+                </div>
+                <div class="box-quarterline">
+                    <p class="box-quarterline-text">Gazdaságinformatikus Bsc</p>
+                </div>
+            </div>
+            <div class="box">
+                <p class="box-header">Tasks</p>
+                <p class="box-data">26/36</p>
+            </div>
+            <div class="box hideif">
+                <p class="box-header">Completion</p>
+                <p class="box-data">70%</p>
+                <div class="box-full right"></div>
+            </div>
+            
+            </a>
+        </li>
+        <li class="container">
+            <a href="">
+                <div href="" class="box new" id="addsemester"></div>
+                <p class="center-info">Új félév</p>
+            </a>
+        </li>
+        <li class="container-b">
+            <a href="" class="box accept"></a>
+            <form class="longbox" name="editsemester">
+                <div class="box-halfline">
+                    <input type="text" class="box-halfline-text-i" form="editsemester" placeholder="Félév">
+                </div>
+                <div class="box-quarterline">
+                    <input type="text" class="box-quarterline-text-i" form="editsemester" placeholder="Egyetem">
+                </div>
+                <div class="box-quarterline">
+                    <input type="text" class="box-quarterline-text-i" form="editsemester" placeholder="Szak">
+                </div>
+            </form>
+            <a href="" class="box cancel"></a>
+            <a href="" class="box delete"></a>
+        </li>
+        <li class="container-b">
+            <div class="longbox">
+                <div class="box-halfline">
+                    <p class="box-halfline-text">Gazdinfó 2019-20/2</p>
+                </div>
+                <div class="box-quarterline">
+                    <p class="box-quarterline-text">PTE TTK</p>
+                </div>
+                <div class="box-quarterline">
+                    <p class="box-quarterline-text">Gazdaságinformatikus Bsc</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-text">
+                    <p class="box-header">Task</p>
+                    <p class="box-header-right">Total</p>
+                    <p class="box-header-right">Left</p>
+                </div>
+                <div class="box-text">
+                    <p class="box-text-header">ZH</p>
+                    <p class="box-text-right">4</p>
+                    <p class="box-text-right">2</p>
+                </div>
+                <div class="box-text">
+                    <p class="box-text-header">Bead</p>
+                    <p class="box-text-right">4</p>
+                    <p class="box-text-right">2</p>
+                </div>
+                <div class="box-text">
+                    <p class="box-text-header">Vizsga</p>
+                    <p class="box-text-right">4</p>
+                    <p class="box-text-right">2</p>
+                </div>
+                <div class="box-text">
+                    <p class="box-text-header">All</p>
+                    <p class="box-text-right">4</p>
+                    <p class="box-text-right">2</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-text">
+                    <p class="box-header">Stats</p>
+                </div>
+                <div class="box-text">
+                    <p class="box-text-header">Kredit</p>
+                    <p class="box-text-right">23/36</p>
+                </div>
+                <div class="box-text">
+                    <p class="box-text-header">Tárgy</p>
+                    <p class="box-text-right">4/7</p>
+                </div>
+                <div class="box-text">
+                    <p class="box-text-header">Átlag</p>
+                    <p class="box-text-right">3,89</p>
+                </div>
+                <div class="box-text">
+                    <p class="box-text-header">KKI</p>
+                    <p class="box-text-right">2,56</p>
+                </div>
+            </div>
+            <div class="box">
+                <p class="box-header">Completion</p>
+                <p class="box-data">70%</p>
+            </div>
+        </li>
+        <li class="container-b">
+            <div class="longbox-x">
+                <div class="box-halfline-o">
+                    <div class="longbox-xx-f">
+                        <p class="box-header">Kötelező</p>
+                        <p class="box-halfline-text-b">Szoftverfejlesztés</p>
+                    </div>
+                    <a href="" class="box-b edit"></a>
+                </div>
+                <div class="box-halfline-o">
+                    <a href="" class="box-fixed-half left-b"></a>
+                    <a href="" class="box-fixed-small">
+                        <div class="box-quarterline">
+                            <p class="box-quarterline-text-b text-small">ZH 1</p>
+                        </div>
+                        <div class="box-quarterline">
+                            <p class="box-quarterline-text-b text-small-half">ZH</p>
+                        </div>
+                        <div class="box-halfline">
+                                <p class="status empty"></p>
+                        </div>
+                        <p class="box-data">4</p>
+                    </a>
+                    <form class="box-fixed-small-3x">
+                        <div class="box-quarterline">
+                            <input type="text" class="box-quarterline-text-b-i" form="editsemester" placeholder="Feladat Név">
+                            <a href="" class="box-b-fixed accept"></a>
+                            <a href="" class="box-b-fixed cancel"></a>
+                            <a href="" class="box-b-fixed delete"></a>
+                        </div>
+                        <div class="box-quarterline">
+                            <a href="" class="listlink">ZH</a>
+                            <a href="" class="listlink selected">BEAD</a>
+                            <a href="" class="listlink">VIZSGA</a>
+                        </div>
+                        <div class="box-halfline">
+                                <a href="" class="status empty" title="Később"></a>
+                                <a href="" class="status failed yes" title="Kész - Sikertelen"></a>
+                                <a href="" class="status wip" title="Dolgozom Rajta"></a>
+                                <a href="" class="status done" title="Kész"></a>
+                                <a href="" class="status success" title="Kész - Sikeres"></a>
+
+                        </div>
+                        <input type="text" title="Kredit" class="box-data-i2">
+                        
+                    </form>
+                    <a href="" class="box-fixed-small">
+                        <div class="box-quarterline">
+                            <p class="box-quarterline-text-b text-small">ZH 1</p>
+                        </div>
+                        <div class="box-quarterline">
+                            <p class="box-quarterline-text-b text-small-half">BEAD</p>
+                        </div>
+                        <div class="box-halfline">
+                                <p class="status empty"></p>
+                        </div>
+                        <p class="box-data">4</p>
+                    </a>
+                    <a href="" class="box-fixed-small new"></a>
+                    <a href="" class="box-fixed-half right-b"></a>
+                </div>
+            </div>
+            <div class="smallbox">
+                <div class="box-halfline-o">
+                    <p class="box-header">Kredit</p>
+                    <p class="box-data">5</p>
+                </div>
+                <div href="" class="box-halfline-o">
+                    <p class="box-header">Jegy</p>
+                    <p class="box-data">5</p>
+                </div>
+            </div>
+            <div class="box">
+                <p class="box-header">Tasks</p>
+                <p class="box-data">26/36</p>
+            </div>
+            <div class="box">
+                <p class="box-header">Completion</p>
+                <p class="box-data">50%</p>
+            </div>
+        </li>
+        <li class="container-b">
+            <a href="" class="box accept"></a>
+            <form class="longbox" name="editcourse">
+                <div class="longbox-xx-f">
+                    <div class="box-quarterline">
+                        <select class="box-quarterline-text-select">
+                            <option value="" disabled selected>Trágy Tipus</option>
+                            <option>Kötelező</option>
+                        </select>
+                    </div>
+                    <div class="box-halfline">
+                        <input type="text" class="box-halfline-text-i" form="editsemester" placeholder="Tárgy">
+                    </div>
+                </div>
+                <div class="smallbox-x">
+                    <div href="" class="box-halfline-o">
+                        <p class="box-header">Kredit</p>
+                        <input type="text" title="Kredit" class="box-data-i">
+                    </div>
+                    <div href="" class="box-halfline-o">
+                        <p class="box-header">Jegy</p>
+                        <input type="text" title="Jegy" class="box-data-i">
+                    </div>
+                </div>
+            </form>
+            <a href="" class="box cancel"></a>
+            <a href="" class="box delete"></a>
+        </li>
+    </ul>
+    <script src="src/script.js"></script>
+</body>
+</html>
